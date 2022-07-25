@@ -120,6 +120,11 @@
 		17F03A2523CF4ED600E01D84 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 172F557B2361A04D00B2B8BB /* Localizable.strings */; };
 		17F03A2623CF4ED600E01D84 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 172F557B2361A04D00B2B8BB /* Localizable.strings */; };
 		386A95912461386B00EFA592 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 386A95932461386B00EFA592 /* InfoPlist.strings */; };
+		F57A7316288E4FD10068ECE4 /* ToDoListUITestsRawVersions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57A7315288E4FD10068ECE4 /* ToDoListUITestsRawVersions.swift */; };
+		F57A731D288E50240068ECE4 /* ToDoListBDDTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57A7313288E4FD10068ECE4 /* ToDoListBDDTests.swift */; };
+		F57A7321288E51650068ECE4 /* ToDoListStepDefinitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57A7320288E51650068ECE4 /* ToDoListStepDefinitions.swift */; };
+		F57A7323288E52080068ECE4 /* ToDoListUITestElements.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57A7322288E52080068ECE4 /* ToDoListUITestElements.swift */; };
+		F57A7326288E52690068ECE4 /* ToDoListUITestBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57A7325288E52690068ECE4 /* ToDoListUITestBase.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -144,30 +149,37 @@
 			remoteGlobalIDString = 17278CC323CE05880014B8B2;
 			remoteInfo = WatchApp;
 		};
+		F57A7317288E4FD10068ECE4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 17D18D33221D56C4005C647B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 17D18D3A221D56C4005C647B;
+			remoteInfo = ToDoList;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		1718BE5023CCBB19009D591A /* Embed App Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 8;
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
 				1718BE4F23CCBB19009D591A /* ToDoListWidget.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
-			runOnlyForDeploymentPostprocessing = 0;
+			runOnlyForDeploymentPostprocessing = 1;
 		};
 		17278CE423CE058A0014B8B2 /* Embed Watch Content */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 8;
 			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
 			dstSubfolderSpec = 16;
 			files = (
 				17278CE323CE05890014B8B2 /* WatchApp.app in Embed Watch Content */,
 			);
 			name = "Embed Watch Content";
-			runOnlyForDeploymentPostprocessing = 0;
+			runOnlyForDeploymentPostprocessing = 1;
 		};
 		17278CE723CE058A0014B8B2 /* Embed App Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -274,6 +286,13 @@
 		386A95922461386B00EFA592 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		386A95942461387200EFA592 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		386A95952461387300EFA592 /* ro */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ro; path = ro.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F57A730A288E4DDF0068ECE4 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		F57A7311288E4FD10068ECE4 /* ToDoListUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToDoListUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F57A7313288E4FD10068ECE4 /* ToDoListBDDTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListBDDTests.swift; sourceTree = "<group>"; };
+		F57A7315288E4FD10068ECE4 /* ToDoListUITestsRawVersions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListUITestsRawVersions.swift; sourceTree = "<group>"; };
+		F57A7320288E51650068ECE4 /* ToDoListStepDefinitions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListStepDefinitions.swift; sourceTree = "<group>"; };
+		F57A7322288E52080068ECE4 /* ToDoListUITestElements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListUITestElements.swift; sourceTree = "<group>"; };
+		F57A7325288E52690068ECE4 /* ToDoListUITestBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListUITestBase.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -327,6 +346,13 @@
 			files = (
 				17E5CEAD26728B540096F9FB /* RealmSwift in Frameworks */,
 				17E5CEAB26728B540096F9FB /* Realm in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F57A730E288E4FD10068ECE4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -427,6 +453,7 @@
 				1718BE4623CCBB19009D591A /* Widget */,
 				17278CC523CE05880014B8B2 /* WatchApp */,
 				17278CD423CE05890014B8B2 /* WatchApp Extension */,
+				F57A7312288E4FD10068ECE4 /* ToDoListUITests */,
 				17D18D3C221D56C4005C647B /* Products */,
 				174F9ED1221D8E7F00D9C139 /* Frameworks */,
 			);
@@ -439,6 +466,7 @@
 				1718BE4323CCBB19009D591A /* ToDoListWidget.appex */,
 				17278CC423CE05880014B8B2 /* WatchApp.app */,
 				17278CD023CE05890014B8B2 /* WatchApp Extension.appex */,
+				F57A7311288E4FD10068ECE4 /* ToDoListUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -521,6 +549,51 @@
 				1745401C222EBFAC00B2CA7B /* RemindersViewController.swift */,
 			);
 			path = Tasks;
+			sourceTree = "<group>";
+		};
+		F57A7312288E4FD10068ECE4 /* ToDoListUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F57A730A288E4DDF0068ECE4 /* README.md */,
+				F57A731E288E50D20068ECE4 /* UITests */,
+				F57A731F288E51260068ECE4 /* UITestStepDefintions */,
+				F57A7324288E52210068ECE4 /* UITestElements */,
+				F57A7327288E528B0068ECE4 /* UITestBase */,
+			);
+			path = ToDoListUITests;
+			sourceTree = "<group>";
+		};
+		F57A731E288E50D20068ECE4 /* UITests */ = {
+			isa = PBXGroup;
+			children = (
+				F57A7313288E4FD10068ECE4 /* ToDoListBDDTests.swift */,
+				F57A7315288E4FD10068ECE4 /* ToDoListUITestsRawVersions.swift */,
+			);
+			path = UITests;
+			sourceTree = "<group>";
+		};
+		F57A731F288E51260068ECE4 /* UITestStepDefintions */ = {
+			isa = PBXGroup;
+			children = (
+				F57A7320288E51650068ECE4 /* ToDoListStepDefinitions.swift */,
+			);
+			path = UITestStepDefintions;
+			sourceTree = "<group>";
+		};
+		F57A7324288E52210068ECE4 /* UITestElements */ = {
+			isa = PBXGroup;
+			children = (
+				F57A7322288E52080068ECE4 /* ToDoListUITestElements.swift */,
+			);
+			path = UITestElements;
+			sourceTree = "<group>";
+		};
+		F57A7327288E528B0068ECE4 /* UITestBase */ = {
+			isa = PBXGroup;
+			children = (
+				F57A7325288E52690068ECE4 /* ToDoListUITestBase.swift */,
+			);
+			path = UITestBase;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -632,13 +705,31 @@
 			productReference = 17D18D3B221D56C4005C647B /* ToDoList.app */;
 			productType = "com.apple.product-type.application";
 		};
+		F57A7310288E4FD10068ECE4 /* ToDoListUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F57A7319288E4FD10068ECE4 /* Build configuration list for PBXNativeTarget "ToDoListUITests" */;
+			buildPhases = (
+				F57A730D288E4FD10068ECE4 /* Sources */,
+				F57A730E288E4FD10068ECE4 /* Frameworks */,
+				F57A730F288E4FD10068ECE4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F57A7318288E4FD10068ECE4 /* PBXTargetDependency */,
+			);
+			name = ToDoListUITests;
+			productName = ToDoListUITests;
+			productReference = F57A7311288E4FD10068ECE4 /* ToDoListUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		17D18D33221D56C4005C647B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1130;
+				LastSwiftUpdateCheck = 1340;
 				LastUpgradeCheck = 1200;
 				ORGANIZATIONNAME = "Radu Ursache - RanduSoft";
 				TargetAttributes = {
@@ -666,6 +757,10 @@
 								enabled = 1;
 							};
 						};
+					};
+					F57A7310288E4FD10068ECE4 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 17D18D3A221D56C4005C647B;
 					};
 				};
 			};
@@ -701,6 +796,7 @@
 				1718BE4223CCBB19009D591A /* ToDoListWidget */,
 				17278CC323CE05880014B8B2 /* WatchApp */,
 				17278CCF23CE05890014B8B2 /* WatchApp Extension */,
+				F57A7310288E4FD10068ECE4 /* ToDoListUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -763,6 +859,13 @@
 				172CCDA322253CC800240725 /* IconBlue@2x.png in Resources */,
 				17D18D44221D56C4005C647B /* Main.storyboard in Resources */,
 				172CCD9E22253CC800240725 /* IconOrange@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F57A730F288E4FD10068ECE4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -843,6 +946,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F57A730D288E4FD10068ECE4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F57A7326288E52690068ECE4 /* ToDoListUITestBase.swift in Sources */,
+				F57A7323288E52080068ECE4 /* ToDoListUITestElements.swift in Sources */,
+				F57A7316288E4FD10068ECE4 /* ToDoListUITestsRawVersions.swift in Sources */,
+				F57A7321288E51650068ECE4 /* ToDoListStepDefinitions.swift in Sources */,
+				F57A731D288E50240068ECE4 /* ToDoListBDDTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -870,6 +985,11 @@
 		17E5CEA126728A260096F9FB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			productRef = 17E5CEA026728A260096F9FB /* RealmSwift */;
+		};
+		F57A7318288E4FD10068ECE4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 17D18D3A221D56C4005C647B /* ToDoList */;
+			targetProxy = F57A7317288E4FD10068ECE4 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -943,16 +1063,16 @@
 				CODE_SIGN_ENTITLEMENTS = Widget/ToDoList.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 3999533L99;
+				DEVELOPMENT_TEAM = 3BVU224MGM;
 				INFOPLIST_FILE = Widget/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.5.1;
-				PRODUCT_BUNDLE_IDENTIFIER = ro.randusoft.RSToDoList.ToDoListWidget;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ToDoListExampleMWWidget;
 				PRODUCT_NAME = ToDoListWidget;
 				SKIP_INSTALL = YES;
 				SUPPORTS_MACCATALYST = NO;
@@ -968,16 +1088,16 @@
 				CODE_SIGN_ENTITLEMENTS = Widget/ToDoList.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 3999533L99;
+				DEVELOPMENT_TEAM = 3BVU224MGM;
 				INFOPLIST_FILE = Widget/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.5.1;
-				PRODUCT_BUNDLE_IDENTIFIER = ro.randusoft.RSToDoList.ToDoListWidget;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ToDoListExampleMWWidget;
 				PRODUCT_NAME = ToDoListWidget;
 				SKIP_INSTALL = YES;
 				SUPPORTS_MACCATALYST = NO;
@@ -994,7 +1114,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = WatchApp/WatchApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3999533L99;
+				DEVELOPMENT_TEAM = 3BVU224MGM;
 				IBSC_MODULE = WatchApp_Extension;
 				INFOPLIST_FILE = WatchApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1003,7 +1123,7 @@
 					"@loader_path/../Frameworks",
 				);
 				MARKETING_VERSION = 1.5.1;
-				PRODUCT_BUNDLE_IDENTIFIER = ro.randusoft.RSToDoList.watchkitapp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ToDoListExampleMWwatchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -1022,7 +1142,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = WatchApp/WatchApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3999533L99;
+				DEVELOPMENT_TEAM = 3BVU224MGM;
 				IBSC_MODULE = WatchApp_Extension;
 				INFOPLIST_FILE = WatchApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1031,7 +1151,7 @@
 					"@loader_path/../Frameworks",
 				);
 				MARKETING_VERSION = 1.5.1;
-				PRODUCT_BUNDLE_IDENTIFIER = ro.randusoft.RSToDoList.watchkitapp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ToDoListExampleMWwatchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -1047,7 +1167,7 @@
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_ENTITLEMENTS = "WatchApp Extension/WatchApp Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3999533L99;
+				DEVELOPMENT_TEAM = 3BVU224MGM;
 				INFOPLIST_FILE = "WatchApp Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1055,7 +1175,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.5.1;
-				PRODUCT_BUNDLE_IDENTIFIER = ro.randusoft.RSToDoList.watchkitapp.watchkitextension;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ToDoListExampleMWwatchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -1071,7 +1191,7 @@
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_ENTITLEMENTS = "WatchApp Extension/WatchApp Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3999533L99;
+				DEVELOPMENT_TEAM = 3BVU224MGM;
 				INFOPLIST_FILE = "WatchApp Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1079,7 +1199,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.5.1;
-				PRODUCT_BUNDLE_IDENTIFIER = ro.randusoft.RSToDoList.watchkitapp.watchkitextension;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ToDoListExampleMWwatchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -1218,16 +1338,16 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = 3999533L99;
+				DEVELOPMENT_TEAM = 3BVU224MGM;
 				INFOPLIST_FILE = "$(SRCROOT)/Others/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.5.1;
 				OTHER_SWIFT_FLAGS = "-D COCOAPODS -D realApp";
-				PRODUCT_BUNDLE_IDENTIFIER = ro.randusoft.RSToDoList;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ToDoListExampleMW;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
@@ -1244,20 +1364,58 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = 3999533L99;
+				DEVELOPMENT_TEAM = 3BVU224MGM;
 				INFOPLIST_FILE = "$(SRCROOT)/Others/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.5.1;
 				OTHER_SWIFT_FLAGS = "-D COCOAPODS -D realApp";
-				PRODUCT_BUNDLE_IDENTIFIER = ro.randusoft.RSToDoList;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ToDoListExampleMW;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F57A731A288E4FD10068ECE4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3BVU224MGM;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Matt-Wassell.ToDoListUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ToDoList;
+			};
+			name = Debug;
+		};
+		F57A731B288E4FD10068ECE4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3BVU224MGM;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Matt-Wassell.ToDoListUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ToDoList;
 			};
 			name = Release;
 		};
@@ -1305,6 +1463,15 @@
 			buildConfigurations = (
 				17D18D4E221D56C5005C647B /* Debug */,
 				17D18D4F221D56C5005C647B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F57A7319288E4FD10068ECE4 /* Build configuration list for PBXNativeTarget "ToDoListUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F57A731A288E4FD10068ECE4 /* Debug */,
+				F57A731B288E4FD10068ECE4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
