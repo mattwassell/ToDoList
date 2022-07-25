@@ -49,5 +49,4 @@ Three tests in XCUITest for the create task, edit task and delete task functiona
 
 I hope this all makes sense and is useful information.  I look forward to discussing if further detail.
 
-#  <#Title#>
 
